@@ -1,0 +1,524 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+//Variables
+$main: #0f3522;
+$sec: #7e846b;
+$light: #dfefe1;
+$orange: #fcab64;
+$text: #6d7258;
+$white: #f9f9f9;
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: $text;
+    font-family: 'Jost';
+
+    font-size: 18px;
+
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+    }
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-weight: 700;
+    ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h5 {
+    color: $main;
+    margin-bottom: 20px;
+}
+
+.subhead-element {
+    margin-bottom: 32px;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    background: $orange;
+    color: $main;
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    background: $main;
+    height: 100px;
+    z-index: 999;
+    background-image: url('/assets/nav-bg.png');
+    background-position: center;
+    background-size: cover;
+
+    .logo {
+        margin-left: 140px;
+        ;
+
+        @media screen and (max-width:768px) {
+            margin-left: 32px;
+        }
+
+        img {
+            max-width: 60px;
+        }
+    }
+
+    .nav-contact {
+        margin-right: 140px;
+        color: $orange;
+
+        @media screen and (max-width:768px) {
+            margin-right: 32px;
+        }
+    }
+}
+
+
+section {
+    padding: 0 140px;
+    margin-bottom: 150px;
+
+    @media screen and (max-width:768px) {
+        padding: 0 32px;
+    }
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0;
+
+    .hero-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('/assets/hero-bg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+
+    }
+
+    .hero-bg-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #131313;
+        opacity: 0.75;
+    }
+
+    .content {
+        max-width: 768px;
+        text-align: center;
+        position: inherit;
+        z-index: 3;
+
+        h1 {
+            font-size: 3vw;
+            font-weight: 300;
+            color: $light;
+            margin-bottom: 32px;
+
+            @media screen and (max-width:768px) {
+                font-size: 3rem
+            }
+        }
+
+        .btn {
+            .btn {
+                display: inline-block;
+                padding: 1em 2em;
+                background: $orange;
+                color: $main;
+                cursor: pointer;
+                font-weight: 700;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.about {
+
+    background: $light;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+    //justify-content: center;
+    .content {
+        font-weight: 300;
+        margin: 0 auto;
+
+        h5 {
+            font-weight: 700;
+            margin-bottom: 32px;
+
+        }
+
+        h1 {
+            font-size: 3vw;
+            font-weight: 300;
+            color: $text;
+            line-height: 1.6;
+
+            @media screen and (max-width:768px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.services {
+    .section-title {
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        max-width: 768px;
+        text-align: center;
+    }
+
+    .row-services {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .col {
+            padding: 20px;
+
+            .image {
+                width: 64px;
+                height: 64px;
+                border-radius: 129px;
+                border: 4px solid $main;
+                background: $light;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                /*
+                img{
+                    width: 100%;
+                }
+                */
+            }
+
+            .details {
+                h3 {
+                    color: $main;
+                    font-weight: 600;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+.lawns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50vh;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-title {
+        width: 40%;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+
+        p:last-child {
+            margin-bottom: 32px;
+        }
+
+        .row {
+            width: 50%;
+            display: flex;
+            margin-bottom: 16px;
+            justify-content: space-between;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .content {
+        width: 50%;
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            ;
+            padding-top: 100px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+}
+
+.request-quote {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $main;
+    align-items: center;
+    background-image: url('/assets/rq-bg.png');
+    margin-bottom: 0;
+
+    .section-title {
+        text-align: center;
+        margin: 32px;
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+
+    h2 {
+        color: $orange;
+        margin-bottom: 32px;
+    }
+
+    h5 {
+        color: $white;
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: $white / 1.2;
+    }
+
+
+    .request-quote-form {
+
+        form {
+            width: 100%;
+
+            .form-row {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                .form-group {
+                    flex: 1;
+
+                    &:last-child {
+                        margin-bottom: 32px;
+                    }
+
+                    .single {
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                    input {
+                        width: 90%;
+                        border: 0;
+                        border-bottom: 2px solid $orange;
+                        background: transparent;
+                        margin-bottom: 32px;
+                        color: $light;
+                        padding: 6px;
+                        margin-right: 20px;
+
+                        &::placeholder {
+                            opacity: 0.5;
+                            color: $white;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $sec;
+    margin-bottom: 0;
+    position: relative;
+
+    .contact-bg {
+        background: url('/assets/contact-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .52;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @media screen and (max-width:768px) {
+        padding: 50px auto;
+        align-items: flex-start;
+    }
+
+    .content {
+
+        position: relative;
+        z-index: 8;
+
+        h2 {
+            color: $orange;
+        }
+
+        .section-title {
+            margin-bottom: 64px;
+        }
+
+        .contact-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+            }
+
+            .col {
+                margin: 0 32px;
+
+                ul {
+                    padding: 0;
+
+
+
+                    li {
+                        line-height: 1.6;
+
+                        h4 {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 16px;
+                            color: $light;
+                        }
+
+                        a {
+                            text-align: center;
+                            color: $main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    padding: 20px;
+    background: $main;
+
+    .row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .col {
+            margin: 0 20px;
+            color: $light;
+            //  color: $text;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            @media screen and (max-width:768px) {
+                margin: 6px 20px;
+                font-size: 10px;
+            }
+
+            a {
+                color: $orange;
+
+            }
+        }
+    }
+}
