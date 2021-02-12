@@ -420,6 +420,12 @@ section {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .request-quote .section-title p {
+    width: 100%;
+  }
+}
+
 .request-quote h2 {
   color: #fcab64;
   margin-bottom: 32px;
@@ -432,6 +438,12 @@ section {
 
 .request-quote p {
   color: #d0d0d0;
+}
+
+@media screen and (max-width: 768px) {
+  .request-quote .request-quote-form {
+    margin-bottom: 75px;
+  }
 }
 
 .request-quote .request-quote-form form {
