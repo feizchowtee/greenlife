@@ -102,7 +102,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .nav .logo {
-    margin-left: 32px;
+    margin-left: 20px;
   }
 }
 
@@ -117,7 +117,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .nav .nav-contact {
-    margin-right: 32px;
+    margin-right: 20px;
   }
 }
 
@@ -128,7 +128,7 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 0 32px;
+    padding: 0 20px;
   }
 }
 

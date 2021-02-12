@@ -101,7 +101,7 @@ ul {
         ;
 
         @media screen and (max-width:768px) {
-            margin-left: 32px;
+            margin-left: 20px;
         }
 
         img {
@@ -114,7 +114,7 @@ ul {
         color: $orange;
 
         @media screen and (max-width:768px) {
-            margin-right: 32px;
+            margin-right: 20px;
         }
     }
 }
@@ -125,7 +125,7 @@ section {
     margin-bottom: 150px;
 
     @media screen and (max-width:768px) {
-        padding: 0 32px;
+        padding: 0 20px;
     }
 }
 
