@@ -216,15 +216,16 @@ section {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
-  .about {
-    padding: 150px auto;
-  }
-}
-
 .about .content {
   font-weight: 300;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about .content {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
 }
 
 .about .content h5 {
@@ -556,6 +557,12 @@ section {
   margin-bottom: 64px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact .content .section-title {
+    margin-top: 75px;
+  }
+}
+
 .contact .content .contact-row {
   width: 100%;
   display: -webkit-box;
@@ -572,6 +579,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 75px;
   }
 }
 

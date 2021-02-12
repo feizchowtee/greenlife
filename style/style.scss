@@ -201,14 +201,15 @@ section {
     align-items: center;
     min-height: 100vh;
 
-    @media screen and (max-width:768px) {
-        padding: 150px auto;
-    }
-
+    
     //justify-content: center;
     .content {
         font-weight: 300;
         margin: 0 auto;
+        @media screen and (max-width:768px) {
+            margin-top: 75px;
+            margin-bottom: 75px;
+        }
 
         h5 {
             font-weight: 700;
@@ -461,6 +462,10 @@ section {
 
         .section-title {
             margin-bottom: 64px;
+
+            @media screen and (max-width:768px) {
+                margin-top: 75px;
+            }
         }
 
         .contact-row {
@@ -470,6 +475,7 @@ section {
 
             @media screen and (max-width:768px) {
                 flex-direction: column;
+                margin-bottom: 75px;
             }
 
             .col {
