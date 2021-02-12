@@ -186,7 +186,7 @@ section {
 
 @media screen and (max-width: 768px) {
   .hero .content h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -216,6 +216,12 @@ section {
   min-height: 100vh;
 }
 
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 150px auto;
+  }
+}
+
 .about .content {
   font-weight: 300;
   margin: 0 auto;
@@ -235,7 +241,7 @@ section {
 
 @media screen and (max-width: 768px) {
   .about .content h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -397,6 +403,12 @@ section {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .request-quote {
+    padding: 2rem 32px;
+  }
+}
+
 .request-quote .section-title {
   text-align: center;
   margin: 32px;
@@ -502,6 +514,12 @@ section {
   background: #7e846b;
   margin-bottom: 0;
   position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 4rem auto;
+  }
 }
 
 .contact .contact-bg {

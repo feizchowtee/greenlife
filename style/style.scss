@@ -175,7 +175,7 @@ section {
             margin-bottom: 32px;
 
             @media screen and (max-width:768px) {
-                font-size: 3rem
+                font-size: 2.4rem;
             }
         }
 
@@ -201,6 +201,10 @@ section {
     align-items: center;
     min-height: 100vh;
 
+    @media screen and (max-width:768px) {
+        padding: 150px auto;
+    }
+
     //justify-content: center;
     .content {
         font-weight: 300;
@@ -219,7 +223,7 @@ section {
             line-height: 1.6;
 
             @media screen and (max-width:768px) {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
         }
     }
@@ -339,6 +343,10 @@ section {
     background-image: url('/assets/rq-bg.png');
     margin-bottom: 0;
 
+    @media screen and (max-width:768px) {
+        padding: 2rem 32px;
+    }
+
     .section-title {
         text-align: center;
         margin: 32px;
@@ -419,6 +427,10 @@ section {
     margin-bottom: 0;
     position: relative;
 
+    @media screen and (max-width:768px) {
+        padding: 4rem auto;
+    }
+
     .contact-bg {
         background: url('/assets/contact-bg.png');
         background-repeat: no-repeat;
@@ -440,6 +452,8 @@ section {
 
         position: relative;
         z-index: 8;
+
+
 
         h2 {
             color: $orange;
